@@ -10,6 +10,10 @@
 ✅ **Easy-to-read stock analysis page**  
 ✅ **Displays stock trends and percentage changes**  
 
+## Demo 
+![Screenshot 2025-03-15 182112](https://github.com/user-attachments/assets/cab04ad2-403e-4f5a-871c-5dbae92bbf18)
+
+
 ## 📂 Project Structure
 ```bash
 📂 NSE-Stock-Analysis
@@ -60,4 +64,5 @@ python generate_html.py
 
 ## ⭐ **Show Your Support**
 If you found this project helpful, consider starring ⭐ the repository on GitHub!Happy Coding! 🚀🔥
+
 
