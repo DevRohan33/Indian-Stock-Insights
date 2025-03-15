@@ -27,8 +27,12 @@
 ## 🔧 Installation & Setup
 ### 1️⃣ **Clone the Repository and install package**
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/NSE-Stock-Analysis.git
+git clone https://github.com/DevRohan33/Indian-Stock-Insights.git
+```
+```bash
 cd NSE-Stock-Analysis
+```
+```bash
 pip install -r requirements.txt
 ```
 ## 2️⃣ **Set Up Your API Key**
