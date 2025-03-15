@@ -1,0 +1,438 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stock Market Analysis</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                text-align: center;
+                padding: 20px;
+            }
+            .container {
+                width: 90%;
+                margin: 0 auto;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #333;
+            }
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 18px;
+                text-align: left;
+            }
+            .styled-table th, .styled-table td {
+                padding: 12px;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+            .highlight-up {
+                background-color: #d4edda;
+                color: #155724;
+            }
+            .highlight-down {
+                background-color: #f8d7da;
+                color: #721c24;
+            }
+            .highlight-neutral {
+                background-color: #fff3cd;
+                color: #856404;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Stock Market Analysis</h1>
+            
+            <h2>Stock Performance Overview</h2>
+            <table border="1" class="dataframe styled-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Category</th>
+      <th>Stock</th>
+      <th>Average % Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🏆 Top Growth Stocks</td>
+      <td>INFY:NSE</td>
+      <td>-0.098</td>
+    </tr>
+    <tr>
+      <td>⚖️ Least Moving Stocks</td>
+      <td>INFY:NSE</td>
+      <td>-0.098</td>
+    </tr>
+    <tr>
+      <td>📉 Most Declined Stocks</td>
+      <td>INFY:NSE</td>
+      <td>-0.098</td>
+    </tr>
+  </tbody>
+</table>
+
+            <h2>Full Stock Data</h2>
+            <table border="1" class="dataframe styled-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Datetime</th>
+      <th>Stock</th>
+      <th>open</th>
+      <th>high</th>
+      <th>low</th>
+      <th>close</th>
+      <th>volume</th>
+      <th>Price Change</th>
+      <th>% Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025-03-13 15:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1578.099976</td>
+      <td>1581.900020</td>
+      <td>1576.000000</td>
+      <td>1579.000000</td>
+      <td>576105</td>
+      <td>0.900024</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 14:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1583.000000</td>
+      <td>1583.400020</td>
+      <td>1577.050049</td>
+      <td>1578.099976</td>
+      <td>1829660</td>
+      <td>-4.900024</td>
+      <td>-0.31</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 13:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1579.199950</td>
+      <td>1585.000000</td>
+      <td>1579.099976</td>
+      <td>1582.800050</td>
+      <td>955729</td>
+      <td>3.600100</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 12:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1576.000000</td>
+      <td>1580.000000</td>
+      <td>1572.699950</td>
+      <td>1579.150020</td>
+      <td>768969</td>
+      <td>3.150020</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 11:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1578.800050</td>
+      <td>1580.050049</td>
+      <td>1570.599980</td>
+      <td>1576.000000</td>
+      <td>1196543</td>
+      <td>-2.800050</td>
+      <td>-0.18</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 10:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1589.000000</td>
+      <td>1589.699950</td>
+      <td>1577.000000</td>
+      <td>1578.849980</td>
+      <td>838751</td>
+      <td>-10.150020</td>
+      <td>-0.64</td>
+    </tr>
+    <tr>
+      <td>2025-03-13 09:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1602.900020</td>
+      <td>1605.000000</td>
+      <td>1585.150020</td>
+      <td>1588.949950</td>
+      <td>1331420</td>
+      <td>-13.950070</td>
+      <td>-0.87</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 15:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1588.050049</td>
+      <td>1590.500000</td>
+      <td>1585.000000</td>
+      <td>1590.000000</td>
+      <td>1132140</td>
+      <td>1.949951</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 14:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1577.250000</td>
+      <td>1594.599980</td>
+      <td>1576.650020</td>
+      <td>1588.000000</td>
+      <td>4447495</td>
+      <td>10.750000</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 13:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1569.250000</td>
+      <td>1578.000000</td>
+      <td>1569.099976</td>
+      <td>1577.300050</td>
+      <td>1228672</td>
+      <td>8.050050</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 12:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1569.849980</td>
+      <td>1571.000000</td>
+      <td>1564.099976</td>
+      <td>1569.250000</td>
+      <td>1654725</td>
+      <td>-0.599980</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 11:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1575.599980</td>
+      <td>1576.849980</td>
+      <td>1568.199950</td>
+      <td>1569.900020</td>
+      <td>1507568</td>
+      <td>-5.699960</td>
+      <td>-0.36</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 10:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1585.750000</td>
+      <td>1586.699950</td>
+      <td>1572.400020</td>
+      <td>1575.500000</td>
+      <td>1427543</td>
+      <td>-10.250000</td>
+      <td>-0.65</td>
+    </tr>
+    <tr>
+      <td>2025-03-12 09:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1633.400020</td>
+      <td>1633.400020</td>
+      <td>1585.199950</td>
+      <td>1585.800050</td>
+      <td>3469110</td>
+      <td>-47.599970</td>
+      <td>-2.91</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 15:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1660.349980</td>
+      <td>1667.699950</td>
+      <td>1660.300050</td>
+      <td>1661.599980</td>
+      <td>1153483</td>
+      <td>1.250000</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 14:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1657.699950</td>
+      <td>1664.949950</td>
+      <td>1656.500000</td>
+      <td>1660.300050</td>
+      <td>3129918</td>
+      <td>2.600100</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 13:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1653.000000</td>
+      <td>1661.650020</td>
+      <td>1652.650020</td>
+      <td>1657.300050</td>
+      <td>1251883</td>
+      <td>4.300050</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 12:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1652.699950</td>
+      <td>1655.900020</td>
+      <td>1651.050049</td>
+      <td>1653.099976</td>
+      <td>752883</td>
+      <td>0.400026</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 11:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1651.349980</td>
+      <td>1656.849980</td>
+      <td>1649.300050</td>
+      <td>1652.849980</td>
+      <td>1349579</td>
+      <td>1.500000</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 10:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1651.949950</td>
+      <td>1657.000000</td>
+      <td>1639.199950</td>
+      <td>1651.800050</td>
+      <td>1734351</td>
+      <td>-0.149900</td>
+      <td>-0.01</td>
+    </tr>
+    <tr>
+      <td>2025-03-11 09:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1665.599980</td>
+      <td>1666.650020</td>
+      <td>1637.150020</td>
+      <td>1651.550050</td>
+      <td>3223173</td>
+      <td>-14.049930</td>
+      <td>-0.84</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 15:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1704.099976</td>
+      <td>1705.000000</td>
+      <td>1700.050049</td>
+      <td>1701.000000</td>
+      <td>620410</td>
+      <td>-3.099976</td>
+      <td>-0.18</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 14:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1702.800050</td>
+      <td>1705.150020</td>
+      <td>1696.099976</td>
+      <td>1704.099976</td>
+      <td>2921109</td>
+      <td>1.299926</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 13:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1713.650020</td>
+      <td>1713.699950</td>
+      <td>1702.750000</td>
+      <td>1702.900020</td>
+      <td>639951</td>
+      <td>-10.750000</td>
+      <td>-0.63</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 12:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1714.550050</td>
+      <td>1717.000000</td>
+      <td>1710.500000</td>
+      <td>1713.800050</td>
+      <td>701566</td>
+      <td>-0.750000</td>
+      <td>-0.04</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 11:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1713.949950</td>
+      <td>1718.699950</td>
+      <td>1707.500000</td>
+      <td>1714.400020</td>
+      <td>563678</td>
+      <td>0.450070</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 10:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1700.500000</td>
+      <td>1715.000000</td>
+      <td>1699.449950</td>
+      <td>1713.949950</td>
+      <td>788286</td>
+      <td>13.449950</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>2025-03-10 09:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1682.000000</td>
+      <td>1709.199950</td>
+      <td>1676.199950</td>
+      <td>1700.349980</td>
+      <td>1136840</td>
+      <td>18.349980</td>
+      <td>1.09</td>
+    </tr>
+    <tr>
+      <td>2025-03-07 15:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1686.000000</td>
+      <td>1687.000000</td>
+      <td>1683.949950</td>
+      <td>1685.949950</td>
+      <td>791703</td>
+      <td>-0.050050</td>
+      <td>-0.00</td>
+    </tr>
+    <tr>
+      <td>2025-03-07 14:15:00</td>
+      <td>INFY:NSE</td>
+      <td>1680.599980</td>
+      <td>1689.400020</td>
+      <td>1680.599980</td>
+      <td>1686.000000</td>
+      <td>1662810</td>
+      <td>5.400020</td>
+      <td>0.32</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </body>
+    </html>
+    
