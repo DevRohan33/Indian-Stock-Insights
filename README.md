@@ -30,7 +30,7 @@
 git clone https://github.com/DevRohan33/Indian-Stock-Insights.git
 ```
 ```bash
-cd NSE-Stock-Analysis
+cd IndianStockData
 ```
 ```bash
 pip install -r requirements.txt
